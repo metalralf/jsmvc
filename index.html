@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>Mobile App.</title>
+
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/fontawesome5/css/all.css">
+
+</head>
+<body>
+
+<div>
+
+    <header>
+
+        <nav>
+            <i class="fas fa-angle-left"></i>
+        </nav>
+
+        <div></div>
+
+        <h1>Mobile App.</h1>
+
+    </header>
+
+    <main>
+        <div>
+
+            <!-- EMPTY STATE -->
+
+            <section class="empty">
+                <h2>Nincsenek teendők</h2>
+                <p>A teendőid listája jelenleg üres.</p>
+                <p>Hozd létre az első tételt!</p>
+                <i class="fas fa-plus-circle"></i>
+            </section>
+
+            <!-- END: EMPTY STATE -->
+
+            <!-- ADD-NEW VIEW -->
+
+            <form>
+
+                <label for="taskName">Megnevezés</label>
+                <input type="text" id="taskName" maxlength="50" required>
+
+                <label for="taskDesc">Leírás</label>
+                <textarea id="taskDesc" maxlength="256"></textarea>
+
+                <button><i class="fas fa-check"></i> Hozzáad</button>
+
+            </form>
+
+            <!-- END: ADD-NEW VIEW -->
+
+            <!-- LIST VIEW -->
+
+            <section>
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam libero est, hendrerit non suscipit
+                    vitae, elementum vel neque. Proin ultrices elit ut urna elementum, id ullamcorper elit laoreet.
+                    Nulla tempus sem eget arcu auctor, id vulputate purus porta.</p>
+            </section>
+            <section>
+                <h2>Morbi nunc lorem</h2>
+                <p>Morbi nunc lorem, gravida non facilisis vitae, facilisis eget ante. Donec eget faucibus velit,
+                    sollicitudin luctus nulla. Nulla quis sapien nunc. Nam sagittis est mollis urna maximus posuere.
+                    Nulla posuere pretium nisl id congue.</p>
+            </section>
+            <section>
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam libero est, hendrerit non suscipit
+                    vitae, elementum vel neque. Proin ultrices elit ut urna elementum, id ullamcorper elit laoreet.
+                    Nulla tempus sem eget arcu auctor, id vulputate purus porta.</p>
+            </section>
+
+            <!-- END: LIST VIEW -->
+
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-plus-square"></i></a></li>
+                <li><a href=""><i class="fas fa-folder-open"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+
+<section class="dialog">
+    <h3>Lorem ipsum dolor</h3>
+    <p>Lorem ipsum dolor sit amet constectetur adipiscing elit.</p>
+    <button class="accept"><i class="fas fa-check"></i> <span>Rendben</span></button>
+    <button class="cancel"><i class="fas fa-times"></i> Mégsem</button>
+</section>
+
+<script src="app/model.js"></script>
+<script src="app/view.js"></script>
+<script src="app/controller.js"></script>
+<script src="app/main.js"></script>
+
+</body>
+</html>
